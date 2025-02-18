@@ -6,7 +6,7 @@
 
 🗓️ **프로젝트 기간 : 2024.10.30 ~ 2023.12.18 (7주)**
 
-👥 **구성원 : 최도혁, 신종신**
+👥 **구성원 : 최도혁, 신종신, 김 송, 박지용, 이현진**
 
 ---
 
@@ -20,7 +20,7 @@
 
 ### ✅ 기획 배경
 
-> “누가 옆에서 복습하라 해줬으면 좋겠다..” <br/> 풀었던 문제를 온전히 내 것으로 만들기 위해 다시 복습하려는데 알림 설정하는게 귀찮지 않으셨나요?
+> “누가 옆에서 복습하라 해줬으면 좋겠다..” <br/> 풀었던 문제를 온전히 내 것으로 만들기 위해 다시 복습하려는데 휴대폰이나 캘린더에 알림 설정하는게 귀찮지 않으셨나요?
 > 
 
 우리는 학습을 하면서 많은 문제를 풀고, 그 과정에서 새로운 지식을 쌓아갑니다. 하지만 그 지식을 완전히 내 것으로 만들기 위해서는 반복적인 복습이 필요하다는 것을 잘 알고 있습니다. 그럼에도 불구하고, 복습할 시간을 설정하는 것은 종종 번거롭게 느껴지곤 합니다.
@@ -35,101 +35,92 @@
 
 ### ✅ 서비스 소개
 
-> 사용자들의 **위치**를 기반으로 한 **SNS**
+> 알고리즘 문제나 TIL(Today I Learn) 내용을 정해진 날짜에 복습할 수 있도록 알림을 보내주는 서비스
 > 
-- 상태메시지를 설정해서 주변 사람들의 감정을 배경으로 확인할 수 있다.
-- 시간과 공간을 기반으로 한 다양한 컨텐츠에 참여할 수 있으며 자신의 기록을 공유할 수 있다.
+- **설정한 날짜에 복습 알림**
+   - 정해진 시각에 그 날에 해당하는 문제에 대해 복습 알림 발송
+
+- **효율적인 문제 관리**
+   - 검색을 통해 특정 문제 확인
+   - 문제를 난이도별로 분류 가능
+   - 문제에 연관된 태그별 검색(고도화)
+
+- **커뮤니티 활성화**
+   - 사용자들이 소통하고 문제를 공유할 수 있는 플랫폼 제공(고도화)
+
+- **안정적이고 확장 가능한 인프라 제공**
+   - 안정적인 서버 운영과 효율적인 자원 관리
+   - 필요 시 확장 가능한 인프라 구축
+   - CI/CD 파이프라인 및 컨테이너 관리 시스템 도입으로 배포 및 운영 효율성 증대
 
 ---
 
 ### 👥 서비스 대상
 
-- 주변에 관심이 많은 사람들
-- 익명의 누군가와 대화를 하고 싶은 사람들
+- 알고리즘 문제를 풀었을 때 다음에 또 풀고 싶은 사람
+- 오늘 공부한 내용을 적어두고 완전히 습득할 때까지 다회독 하는 사람
 
 
 
 ## 💌 서비스 화면 및 기능 소개
 
-### ✅ 시/공간 화면
+### ✅ 사용자 기능
 
-- **닉네임 및 현재 상태메시지 설정**
+> **로그인/회원가입**
 
-> 상태메시지를 감정 분석한 후, 주변인들의 감정에 따라 배경이 변하는 걸 확인할 수 있다.
+- 소셜 로그인 기능 (OAuth2.0 사용: Google)
+
+- 사용자 프로필 생성 및 관리
 
 ![메인_회원정보수정.gif](readme_assets/메인_회원정보수정.gif)
 
 
+> **프로필 관리**
 
-- **같은 공간, 같은 시간을 보내는 사람 찾기**
-
-> 반경 10km 이내의 사람들 중 어플을 활성한 사람이 있으면 화면에서 확인 가능하다.
+- 사용자 프로필 편집 (이름, 이메일, 닉네임 등)
 
 ![메인_주변유저조회.gif](readme_assets/메인_주변유저조회.gif)
 
+---
 
-- **다른 사용자와 상호 작용**
+### ✅ 게시물 기능
 
-> 1:1 채팅(양방향)과 쪽지 보내기(단방향)를 할 수 있다.
+> **코드 게시판**
 
-![메인_채팅보내기.gif](readme_assets/메인_채팅보내기.gif)
-![메인_쪽지보내기.gif](readme_assets/메인_쪽지보내기.gif)
-![메인_쪽지확인+좋아요.gif](readme_assets/메인_쪽지확인+좋아요.gif)
+- 알고리즘 문제 풀이 등록 기능
+- 자신의 게시물 수정 및 삭제 기능
+- 복습 알림일 및 난이도 설정 기능
+- 복습 게시물 생성 기능
+
+> **TIL 게시판**
+
+- TIL 게시물 등록 기능
+- 자신의 게시물 수정 및 삭제 기능
+- 게시물 스크랩 기능
+
+![메인_주변유저조회.gif](readme_assets/메인_주변유저조회.gif)
 
 ---
 
-### ✅ 시간 화면
+### ✅ 서버 관리
 
-- **주제에 따른 사진 콘테스트**
+> **서버 모니터링**
 
-> 시간대에 따라 바뀌는 주제에 맞춰 사진을 업로드 할 수 있다.
+- 서버 상태 모니터링 및 로그 관리
+- GitAction을 이용한 CI/CD 파이프라인 구축
 
-![시간_사진_목록.gif](readme_assets/시간_사진%20목록.gif)
-
-![시간_사진업로드.gif](readme_assets/시간_사진업로드.gif)
-
-
-- **명예의 전당**
-
-> 좋아요를 많이 받은 베스트 사진들을 확인할 수 있다.
-
-![시간_전시회.gif](readme_assets/시간_전시회.gif)
+![메인_주변유저조회.gif](readme_assets/메인_주변유저조회.gif)
 
 ---
-
-### ✅ 공간 화면
-
-- **랜드마크 확인**
-
-> 주변에 있는 랜드마크를 확인할 수 있으며, 타 지역에 있는 랜드마크를 조회할 수 있다.
-
-![공간_랜드마크조회+방명록.gif](readme_assets/공간_랜드마크조회+방명록.gif)
-
-
-- **방명록**
-
-> 주변에 있는 방명록을 확인할 수 있으며, 지도를 통해 위치도 확인할 수 있다.
-
-![공간_주변방명록+댓글작성.gif](readme_assets/공간_주변방명록+댓글작성.gif)
-
-- **글 등록 및 내 방명록 확인**
-
-> 방명록과 랜드마크 나누어서 글을 등록할 수 있고, 내가 적었던 방명록을 확인할 수 있다.
-
-![공간_방명록 작성.gif](readme_assets/공간_방명록%20작성.gif)
-
-
 
 ## 🛠 기술 스택
 
 ### FE
 <p>
    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white">
-  <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat-square&logo=Recoil&logoColor=white">
-  <img src="https://img.shields.io/badge/React Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white">
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white">
-  <img src="https://img.shields.io/badge/Javascript-F7DF1e?style=flat-square&logo=javascript&logoColor=white"/>
+   <img src="https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=Swift&logoColor=white">
+   <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white">
+   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white">
 </p>
 
 
@@ -142,30 +133,27 @@
 
 ### DB
 <p>
-   <img src="https://img.shields.io/badge/postgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white"/>
+   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
 </p>
 
 
 ### Dev-Ops
 <p>
    <img src="https://img.shields.io/badge/amazonEC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"/>
-  <img src="https://img.shields.io/badge/amazonS3-569A31?style=flat-square&logo=amazonS3&logoColor=white"/>
-   <img src="https://img.shields.io/badge/jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white"/>
    <img src="https://img.shields.io/badge/docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
    <img src="https://img.shields.io/badge/nginx-009639?style=flat-square&logo=nginx&logoColor=white"/>
+   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/>
+   <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/>
 </p>
 
 
 ### Communication
 <p>
+   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
    <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white">
    <img src="https://img.shields.io/badge/jira-0052CC?style=flat-square&logo=jira&logoColor=white">
    <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white">
-   <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white">
-   <img src="https://img.shields.io/badge/Gerrit-EEEEEE?style=flat-square&logo=gerrit&logoColor=white">
-   <img src="https://img.shields.io/badge/Mattermost-0058CC?style=flat-square&logo=mattermost&logoColor=white">
 </p>
 
 
@@ -175,37 +163,25 @@
 ### FE
 
 ```markdown
-└─📦 src
-  ├─📂 api
-  ├─📂 assets
-  │  ├─📂 animation
-  │  ├─📂 common
-  │  ├─📂 fonts
-  │  ├─📂 icons
-  │  ├─📂 images
-  │  ├─📂 landmark
-  │  ├─📂 like
-  │  ├─📂 mail
-  │  ├─📂 timeBackground
-  │  ├─📂 tutorial
-  │  └─📜 kakao_login_button.png
-  ├─📂 components
-  │  ├─📂 character
-  │  ├─📂 chatpage
-  │  ├─📂 common
-  │  ├─📂 landmarkpage
-  │  ├─📂 loginpage
-  │  ├─📂 mailboxpage
-  │  ├─📂 mainpage
-  │  ├─📂 spacepage
-  │  └─📂 timepage
-  ├─📂 pages
-  ├─📂 recoil
-  │  ├─📂 existingCharacter
-  │  ├─📂 location
-  │  └─📂 user
-  ├─📂 utils
-  └─📜 App.jsx
+ori-front (Repository Root)
+├── 📂 public
+├── 📂 src
+│   ├── 📂 auth
+│   ├── 📂 pages
+│   ├── 📄 App.css
+│   ├── 📄 App.js
+│   ├── 📄 App.test.js
+│   ├── 📄 firebase-config.js
+│   ├── 📄 index.css
+│   ├── 📄 index.js
+│   ├── 📄 logo.svg
+│   ├── 📄 reportWebVitals.js
+│   └── 📄 setupTests.js
+├── 📄 .gitignore
+├── 📄 package.json
+├── 📄 README.md
+└── ... (나머지 파일들)
+
 ```
 
 ---
@@ -213,76 +189,97 @@
 ### BE
 
 ```markdown
-C:.
-├─📂 generated
-│  └─📂 com
-│      └─📂 example
-│          └─📂 backend
-│              └─📂 entity
-│                  ├─📂 mariaDB
-│                  │  ├─📂 chat
-│                  │  ├─📂 member
-│                  │  ├─📂 message
-│                  │  ├─📂 space
-│                  │  ├─📂 status
-│                  │  └─📂 time
-│                  └─📂 postgreSQL
-├─📂 java
-│  └─📂 com
-│      └─📂 example
-│          ├─📂 backend
-│          │  ├─📂 config
-│          │  │  └─📂 chat
-│          │  ├─📂 controller
-│          │  │  ├─📂 chat
-│          │  │  ├─📂 member
-│          │  │  ├─📂 message
-│          │  │  ├─📂 space
-│          │  │  ├─📂 time
-│          │  │  └─📂 web
-│          │  ├─📂 data
-│          │  ├─📂 dto
-│          │  │  ├─📂 chat
-│          │  │  ├─📂 image
-│          │  │  ├─📂 landmark
-│          │  │  ├─📂 memberUpdate
-│          │  │  ├─📂 message
-│          │  │  └─📂 record
-│          │  ├─📂 entity
-│          │  │  ├─📂 mariaDB
-│          │  │  │  ├─📂 chat
-│          │  │  │  ├─📂 member
-│          │  │  │  ├─📂 message
-│          │  │  │  ├─📂 space
-│          │  │  │  ├─📂 status
-│          │  │  │  └─📂 time
-│          │  │  └─📂 postgreSQL
-│          │  ├─📂 exception
-│          │  │  └─📂 type
-│          │  ├─📂 jwt
-│          │  ├─📂 repository
-│          │  │  ├─📂 mariaDB
-│          │  │  │  ├─📂 chat
-│          │  │  │  ├─📂 image
-│          │  │  │  ├─📂 landmark
-│          │  │  │  ├─📂 member
-│          │  │  │  ├─📂 message
-│          │  │  │  ├─📂 record
-│          │  │  │  └─📂 status
-│          │  │  └─📂 postgreSQL
-│          │  ├─📂 service
-│          │  │  ├─📂 chat
-│          │  │  ├─📂 Member
-│          │  │  └─📂 message
-│          │  ├─📂 type
-│          │  └─📂 util
-│          │      ├─📂 fcm
-│          │      └─📂 mattermost
-│          └─📂 scheduler
-└─📂 resources
-    └─📂 firebase
+ori-be (Repository Root)
+├── 📂 .github
+│   └── 📂 workflows
+├── 📂 gradle
+│   └── 📂 wrapper
+├── 📂 src
+│   ├── 📂 main
+│   │   └── 📂 java
+│   │       └── 📂 org
+│   │           └── 📂 example
+│   │               └── 📂 autoreview
+│   │                   ├── 📂 domain
+│   │                   │   ├── 📂 bookmark
+│   │                   │   ├── 📂 codepost
+│   │                   │   ├── 📂 fcm
+│   │                   │   ├── 📂 member
+│   │                   │   ├── 📂 notification
+│   │                   │   ├── 📂 refresh
+│   │                   │   ├── 📂 review
+│   │                   │   └── 📂 tilpost
+│   │                   ├── 📂 global
+│   │                   │   ├── 📂 common
+│   │                   │   │   └── 📂 basetime
+│   │                   │   ├── 📂 config
+│   │                   │   ├── 📂 exception
+│   │                   │   ├── 📂 initializer
+│   │                   │   ├── 📂 jwt
+│   │                   │   └── 📂 scheduler
+│   │                   └── 📜 AutoreviewApplication.java
+├── .gitignore
+├── .gitmodules
+├── Dockerfile.dev
+├── Dockerfile.local
+├── Dockerfile.prod
+├── build.gradle
+├── gradlew
+├── gradlew.bat
+└── settings.gradle
 ```
 
+---
+
+### Android
+
+```markdown
+ori-aos (Repository Root)
+├── 📂 public
+├── 📂 src
+│   ├── 📂 auth
+│   ├── 📂 pages
+│   ├── 📄 App.css
+│   ├── 📄 App.js
+│   ├── 📄 App.test.js
+│   ├── 📄 firebase-config.js
+│   ├── 📄 index.css
+│   ├── 📄 index.js
+│   ├── 📄 logo.svg
+│   ├── 📄 reportWebVitals.js
+│   └── 📄 setupTests.js
+├── 📄 .gitignore
+├── 📄 package.json
+├── 📄 README.md
+└── ... (나머지 파일들)
+
+```
+
+---
+
+### IOS
+
+```markdown
+ori-ios (Repository Root)
+├── 📂 public
+├── 📂 src
+│   ├── 📂 auth
+│   ├── 📂 pages
+│   ├── 📄 App.css
+│   ├── 📄 App.js
+│   ├── 📄 App.test.js
+│   ├── 📄 firebase-config.js
+│   ├── 📄 index.css
+│   ├── 📄 index.js
+│   ├── 📄 logo.svg
+│   ├── 📄 reportWebVitals.js
+│   └── 📄 setupTests.js
+├── 📄 .gitignore
+├── 📄 package.json
+├── 📄 README.md
+└── ... (나머지 파일들)
+
+```
 
 ## 📜 프로젝트 산출물
 
