@@ -284,30 +284,33 @@ ori-ios (Repository Root)
 ## 📜 프로젝트 산출물
 
 ### 시스템 아키텍쳐
-![System_Architecture](readme_assets/System_Architecture.png)
+![ORI 아키텍처](https://github.com/user-attachments/assets/8c16884f-e995-4806-8daf-abc7a8e39695)
+
 
 
 ---
 
 ### ERD
-![ERD](readme_assets/ERD.png)
+![ORI ERD](https://github.com/user-attachments/assets/4af80514-bcdc-4719-928e-916c4fc8e9a6)
+
 
 
 ---
 
 ### API 명세서
-![API_1](readme_assets/API_1.png)
-![API_2](readme_assets/API_2.png)
-![API_3](readme_assets/API_3.png)
-![API_4](readme_assets/API_4.png)
-![API_5](readme_assets/API_5.png)
+![api 1](https://github.com/user-attachments/assets/bdd8e999-6bb9-4c9b-91b0-3183d0d8f3eb)
+![api 2](https://github.com/user-attachments/assets/c18072e2-14fc-4006-b699-9bb8175dacfa)
+![api 3](https://github.com/user-attachments/assets/8c569fc8-af3a-4420-8e8b-5402b26d34c8)
+![api 4](https://github.com/user-attachments/assets/ad3c6c15-0f77-4fc5-935c-366041d3470d)
+![api 5](https://github.com/user-attachments/assets/02319829-3022-49d5-add2-479a7f980e6f)
+
 
 
 ## 💙 팀원 소개
-| ㅁ | ㅁ | ㅁ |
+| 신종신 | 최도혁 | 박지용 |
 | --- | --- | --- |
-| Front-End <br> 시간 페이지 구현 및 CSS <br> 전체 방명록 CSS <br> 쪽지 페이지 CSS <br> FE CI/CD 구축 및 SSL 적용 <br> 서기 | Front-End, UI/UX <br> 페이지 디자인 <br> 랜드마크 조회 및 등록 <br> 메인 페이지 구현 및 CSS <br> 주변 유저 쪽지 전송 구현 | Front-End <br> 카카오톡 소셜 로그인 <br> 일반 방명록 구현 및 CSS <br> 쪽지 페이지 구현 <br> 프로필 페이지 구현 <br> 지도 API  |
-| url |  | url |
-| ㅁ | ㅁ(팀장👑) |  |
-| Full Stack <br> Stomp + SockJS 채팅 <br> 쪽지 및 채팅 API 제작 <br> PostGIS 공간 쿼리 적용 <br> 채팅방 페이지 css <br> 메인 페이지 구조 설정 및 css 적용 <br> 무한 스크롤 기능 구현 <br> CI/CD 구축 및 SSL 적용 | Full Stack <br> Firebase 푸시 알림 <br> Stomp+SockJS 채팅 <br> 채팅 페이지 기능 및 CSS <br> PostGIS 공간 쿼리 적용 <br> 스프링 시큐리티+JWT 카카오 소셜 로그인 <br> 메인, 시간, 공간페이지 API 제작 |  |
-| url | url |  |
+| Back-End <br> 너가 만든거 주저리주저리 <br> 주저리 | Back-End <br> 내가 만든거 주저리주저리 <br> 주저리 | Android <br> 형이 만든거 주저리주저리 <br> 주저리 |
+| <span style="color: #FF5733">:octocat: [ArcticFoox의 GitHub](https://github.com/ArcticFoox)</span> | <span style="color: #33C1FF">:octocat: [최도혁의 GitHub](https://github.com/ehgur062300)</span> |  |
+| **이현진** | **김 송** |  |
+| Design <br> 누나가 만든거 주저리주저리 <br> 주저리 | Ios <br> 너가 만든거 주저리주저리 <br> 주저리 |  |
+| url | :octocat: [ksiomng의 GitHub](https://github.com/ksiomng) |  |
