@@ -4,11 +4,14 @@
 
 🏷 **프로젝트 명 : ORI**
 
-🗓️ **프로젝트 기간 : 2024.10.30 ~ 2025.?.?**
+🗓️ **프로젝트 기간 : 2024.10.30 \~** 
 
-👥 **구성원 : 최도혁, 신종신, 김 송, 박지용, 이현진**
+👥 **구성원 : 최도혁, 신종신**
 
 ---
+### 👨‍💻 백엔드 코드 바로가기
+
+<span style="color: #33C1FF">:octocat:**Github | https://github.com/Auto-Review/ori-be/tree/dev**
 
 ### 📲 서비스 구경 바로가기
 
@@ -100,6 +103,22 @@
 
 ![메인_주변유저조회.gif](readme_assets/메인_주변유저조회.gif)
 
+> **리뷰(복습) 작성**
+
+- 알고리즘 게시물에만 등록 가능
+- 알고리즘 게시물에 생성 및 수정, 삭제 기능
+- 리뷰 목록 조회 기능
+
+![메인_주변유저조회.gif](readme_assets/메인_주변유저조회.gif)
+
+> **댓글**
+
+- 댓글 생성 및 수정, 삭제 기능
+- 댓글 최대 depth 1로 고정
+- 닉네임 언급 방식으로 표현
+
+![메인_주변유저조회.gif](readme_assets/메인_주변유저조회.gif)
+
 ---
 
 ### ✅ 서버 관리
@@ -114,15 +133,6 @@
 ---
 
 ## 🛠 기술 스택
-
-### FE
-<p>
-   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white">
-   <img src="https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=Swift&logoColor=white">
-   <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white">
-   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white">
-</p>
-
 
 ### BE
 <p>
@@ -148,7 +158,7 @@
 </p>
 
 
-### Communication
+### Communication Tool
 <p>
    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
    <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white">
@@ -159,32 +169,6 @@
 
 
 ## 🗂 프로젝트 구조
-
-### FE
-
-```markdown
-ori-front (Repository Root)
-├── 📂 public
-├── 📂 src
-│   ├── 📂 auth
-│   ├── 📂 pages
-│   ├── 📄 App.css
-│   ├── 📄 App.js
-│   ├── 📄 App.test.js
-│   ├── 📄 firebase-config.js
-│   ├── 📄 index.css
-│   ├── 📄 index.js
-│   ├── 📄 logo.svg
-│   ├── 📄 reportWebVitals.js
-│   └── 📄 setupTests.js
-├── 📄 .gitignore
-├── 📄 package.json
-├── 📄 README.md
-└── ... (나머지 파일들)
-
-```
-
----
 
 ### BE
 
@@ -229,58 +213,6 @@ ori-be (Repository Root)
 └── settings.gradle
 ```
 
----
-
-### Android
-
-```markdown
-ori-aos (Repository Root)
-├── 📂 public
-├── 📂 src
-│   ├── 📂 auth
-│   ├── 📂 pages
-│   ├── 📄 App.css
-│   ├── 📄 App.js
-│   ├── 📄 App.test.js
-│   ├── 📄 firebase-config.js
-│   ├── 📄 index.css
-│   ├── 📄 index.js
-│   ├── 📄 logo.svg
-│   ├── 📄 reportWebVitals.js
-│   └── 📄 setupTests.js
-├── 📄 .gitignore
-├── 📄 package.json
-├── 📄 README.md
-└── ... (나머지 파일들)
-
-```
-
----
-
-### IOS
-
-```markdown
-ori-ios (Repository Root)
-├── 📂 public
-├── 📂 src
-│   ├── 📂 auth
-│   ├── 📂 pages
-│   ├── 📄 App.css
-│   ├── 📄 App.js
-│   ├── 📄 App.test.js
-│   ├── 📄 firebase-config.js
-│   ├── 📄 index.css
-│   ├── 📄 index.js
-│   ├── 📄 logo.svg
-│   ├── 📄 reportWebVitals.js
-│   └── 📄 setupTests.js
-├── 📄 .gitignore
-├── 📄 package.json
-├── 📄 README.md
-└── ... (나머지 파일들)
-
-```
-
 ## 📜 프로젝트 산출물
 
 ### 시스템 아키텍쳐
@@ -297,20 +229,14 @@ ori-ios (Repository Root)
 
 ---
 
-### API 명세서
-![api 1](https://github.com/user-attachments/assets/bdd8e999-6bb9-4c9b-91b0-3183d0d8f3eb)
-![api 2](https://github.com/user-attachments/assets/c18072e2-14fc-4006-b699-9bb8175dacfa)
-![api 3](https://github.com/user-attachments/assets/8c569fc8-af3a-4420-8e8b-5402b26d34c8)
-![api 4](https://github.com/user-attachments/assets/ad3c6c15-0f77-4fc5-935c-366041d3470d)
-![api 5](https://github.com/user-attachments/assets/02319829-3022-49d5-add2-479a7f980e6f)
+### 트러블 슈팅
+
+<span style="color: #FF5733">🧾: [트러블 슈팅](https://backend-repository.tistory.com/category/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/AutoReview)</span>
 
 
 
-## 💙 팀원 소개
-| 신종신 | 최도혁 | 박지용 |
-| --- | --- | --- |
+## 👨‍💻  팀원 소개
+| 신종신 | 최도혁 | 
+| --- | --- |
 | Back-End <br> 너가 만든거 주저리주저리 <br> 주저리 | Back-End <br> 내가 만든거 주저리주저리 <br> 주저리 | Android <br> 형이 만든거 주저리주저리 <br> 주저리 |
-| <span style="color: #FF5733">:octocat: [ArcticFoox의 GitHub](https://github.com/ArcticFoox)</span> | <span style="color: #33C1FF">:octocat: [최도혁의 GitHub](https://github.com/ehgur062300)</span> |  |
-| **이현진** | **김 송** |  |
-| Design <br> 누나가 만든거 주저리주저리 <br> 주저리 | Ios <br> 너가 만든거 주저리주저리 <br> 주저리 |  |
-| url | :octocat: [ksiomng의 GitHub](https://github.com/ksiomng) |  |
+| <span style="color: #FF5733">:octocat: [ArcticFoox의 GitHub](https://github.com/ArcticFoox)</span> | <span style="color: #33C1FF">:octocat: [최도혁의 GitHub](https://github.com/ehgur062300)</span>
