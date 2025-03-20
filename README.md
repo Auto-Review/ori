@@ -174,6 +174,7 @@
 
 ```markdown
 ori-be (Repository Root)
+ori-be (Repository Root)
 ├── 📂 .github
 │   └── 📂 workflows
 ├── 📂 gradle
@@ -216,7 +217,7 @@ ori-be (Repository Root)
 ## 📜 프로젝트 산출물
 
 ### 시스템 아키텍쳐
-![ORI 아키텍처](https://github.com/user-attachments/assets/8c16884f-e995-4806-8daf-abc7a8e39695)
+![image](https://github.com/user-attachments/assets/febeedc7-a5ce-40f8-bcc4-d4b1e995b8d0)
 
 
 
@@ -238,5 +239,5 @@ ori-be (Repository Root)
 ## 👨‍💻  팀원 소개
 | 신종신 | 최도혁 | 
 | --- | --- |
-| Back-End <br> 너가 만든거 주저리주저리 <br> 주저리 | Back-End <br> 내가 만든거 주저리주저리 <br> 주저리 | Android <br> 형이 만든거 주저리주저리 <br> 주저리 |
+| **Back-End** <br> - 소셜 로그인 및 회원 서비스 구현 <br> - TIL POST 서비스 구현 <br> - 프로메테우스 및 그라파나로 성능 지표 확인 <br>-  k6로 성능 테스트 | **Back-End** <br> - Code Post 서비스 구현 <br> - 댓글,복습 서비스 구현 <br> - FCM을 활용한 알림 서비스 구현 <br> - k6로 성능 테스트 <br> - DB 마이그레이션을 위해 Flyway 적용 |
 | <span style="color: #FF5733">:octocat: [ArcticFoox의 GitHub](https://github.com/ArcticFoox)</span> | <span style="color: #33C1FF">:octocat: [최도혁의 GitHub](https://github.com/ehgur062300)</span>
